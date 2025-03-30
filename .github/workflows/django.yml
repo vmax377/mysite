@@ -25,14 +25,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-
-    - name: Install Firefox and Geckodriver
-      run: |
-       sudo apt-get update
-       sudo apt-get install -y firefox
-       sudo snap install geckodriver
     - name: Run Tests
       run: |
        MOZ_HEADLESS=1 python manage.py test
           
-        python manage.py test
