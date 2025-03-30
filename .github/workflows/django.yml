@@ -30,4 +30,3 @@ jobs:
        MOZ_HEADLESS=1 python manage.py test
       
         python manage.py test
-pp
