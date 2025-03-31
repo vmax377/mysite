@@ -13,7 +13,7 @@ class MySeleniumTests(StaticLiveServerTestCase):
         opts = Options()
         cls.selenium = WebDriver(options=opts)
         cls.selenium.implicitly_wait(5)
-        cls.live_server_url = 'http://0.0.0.0:8000'  # Sobrescribimos la URL del servidor
+       # cls.live_server_url = 'http://0.0.0.0:8000'  # Sobrescribimos la URL del servidor
 
         # Crear superusuario inicial
         admin_user = User.objects.create_user("isard", "isard@isardvdi.com", "pirineus")
